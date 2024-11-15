@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Form and Stuff</title>
 </head>
 <body>
+    <div id="background">
+    
+    <h1 id="headerText">The Blue Form</h1>
 
-    <form action="index.php" method="post">
+    <form action="index.php" method="post" enctype="multipart/form-data">
 
         <label for="username">Username: </label>
         <input type="text" id="username" placeholder="CritMaster" minlength="6" maxlength="15" required>
@@ -19,7 +23,7 @@
         <label for="email">Email: </label>
         <input type="email" id="email" placeholder="" required>
         <br>
-        <label for="fone">phone #: </label>
+        <label for="fone">Phone #: </label>
         <input type="tel" id="fone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
         <br>
         <label for="bday">Birthdate: </label>
@@ -29,11 +33,11 @@
         <input type="number" id="quant" min="0" max="999" value="1">
         <br>
         <label for="title">Title: </label>
-            <label for="Mr.">Mr. </label>
+            <label for="Mr.">Mr.</label>
             <input type="radio" id="Mr." value="Mr." name="title">
-            <label for="Ms.">Ms. </label>
+            <label for="Ms.">Ms.</label>
             <input type="radio" id="Ms." value="Ms." name="title">
-            <label for="PhD.">PhD. </label>
+            <label for="PhD.">PhD.</label>
             <input type="radio" id="PhD." value="PhD." name="title">
         <br>
         <label for="payment">Payment: </label>
@@ -43,18 +47,20 @@
             <option value="giftcard">Gift Card</option>
         </select>
         <br>
-        <label for="sub">Subscribe?</label>
+        <label for="sub">Subscribe?:</label>
         <input type="checkbox" id="sub">
         <br>
         <label for="comment">Comment?: </label>
         <textarea id="comment" rows="3" cols="25"></textarea>
         <br>
         <label for="file">File:</label>
-        <input type="file" id="file" accept="">
+        <input type="file" id="file" accept="image/png, image/jpeg">
         <br>
         <input type="reset"><br>
         <input type="submit">
 
     </form>
+
+    </div>
 </body>
 </html>

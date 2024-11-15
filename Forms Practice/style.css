@@ -1,0 +1,37 @@
+#background{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 25px;
+    background-image: linear-gradient(to bottom, rgb(47,79,79), rgb(108, 216, 180));
+}
+
+#headerText{
+    color: rgb(31, 134, 225);
+    text-align: center;
+    text-decoration: underline;
+    line-height: normal;
+}
+
+label{
+    color: aliceblue;
+    line-height: 2;
+    margin-left: 10px;
+}
+
+input, select, textarea{
+    background-color: darkslategray;
+    color: lightblue;
+    border-style: none;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color: red;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+
